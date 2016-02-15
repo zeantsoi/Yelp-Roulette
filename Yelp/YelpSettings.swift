@@ -177,3 +177,21 @@ let yelpCategories = [["name" : "Afghan", "code": "afghani"],
         ["name" : "Wok", "code": "wok"],
         ["name" : "Wraps", "code": "wraps"],
         ["name" : "Yugoslav", "code": "yugoslav"]]
+
+let yelpSorts = [
+    ["name" : "Best match", "code": "0"],
+    ["name" : "Distance", "code": "1"],
+    ["name" : "Highest rated", "code": "2"]
+]
+
+func milesToMeters(miles: Float) -> String {
+    return String(Int(miles * 1609.34))
+}
+
+let yelpDistances = [
+    ["name" : "Half mile", "code": milesToMeters(0.5)],
+    ["name" : "1 mile", "code": milesToMeters(1.0)],
+    ["name" : "5 miles", "code": milesToMeters(5.0)],
+    ["name" : "10 miles", "code": milesToMeters(10.0)],
+    ["name" : "25 miles", "code": milesToMeters(25.0)]
+]
